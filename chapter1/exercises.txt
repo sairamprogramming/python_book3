@@ -1,0 +1,81 @@
+Q:1. Which of the following are operators, and which are values?
+
+*
+'hello'
+-88.8
+-
+/
++
+5
+
+Sol : The values given abouve are {'hello', -88.8, 5}, the rest are operators.
+
+Q:2. Which of the following is a variable, and which is a string?
+
+spam
+'spam'
+
+Sol: 'spam' is a string, since in python strings are enclosed in single quotes. spam can refer to a variable,
+     since it is a legal variable name and therefore can be assigned a value.
+
+Q:3. Name three data types.
+
+Sol: The three data types in python are:
+
+        1) Integer data type (int), this refers to mathematical integers (-23, 0 , 1, 23242).
+        2) Floating point numbers (float), this refers to decimal number (-34.23, 45.342, 1.0).
+        3) String data type (str), this refers to textual data, this data type is enclosed in quotes (single, double 
+            or triple quotes). Ex: 'Name', "Is", '''Multi line Support''', """is possible using triple quotes""". 
+
+Q:4. What is an expression made up of? What do all expressions do?
+
+Sol: An expression is made up of operands and operators.
+
+     Operands are values on which mathematical operations in an expression take place.
+
+     Operators are symbols that indicate the type of operation that occurs between its operands
+     in an expression.
+
+     Expression akways evaluate down to a single value.
+
+Q:5. This chapter introduced assignment statements, like spam = 10. What is the difference between an expression and a statement?
+
+Sol: An expression evaluates to a sinlge value( that is returns a number). An assignment statement assigns the value on the 
+     right hand side of the assignment operator ('=' Equal symbol) to the variable on the left hand side.
+
+Q:6. What does the variable bacon contain after the following code runs?
+
+bacon = 20
+bacon + 1
+
+Sol: The variable bacon holds the value 20. (Since bacon + 1 is not assigned to bacon ==> this expression only uses the value
+     present in bacon variable to evaluate the expression.)
+
+Q:7. What should the following two expressions evaluate to?
+
+'spam' + 'spamspam'
+'spam' * 3
+
+Sol: 'spam' + 'spamspam' --> 'spamspamspam' (String Concatenation)
+     'spam' * 3 --> 'spamspamspam' (String Replication)
+
+Q:8. Why is eggs a valid variable name while 100 is invalid?
+
+Sol: eggs is valid variable name since it follows the convention set in python for variable names.
+     100 is not valid variable name since it starts with a number (against convention for python variable names).
+
+Q:9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+
+Sol: int() --> Converts an appropriate float or string to int data type.
+     float() --> Converts an appropriate int or string to float data type.
+     str() --> Converts int or float to string data type.
+
+Q:10. Why does this expression cause an error? How can you fix it?
+
+'I have eaten ' + 99 + ' burritos.'
+
+Sol: The above line causes an error, since we are trying to concatenate a string to an int.
+     
+     You can fix the above string by converting the int in the line to a string.
+
+    Fixd Line ---> 'I have eaten ' + str(99) + ' burritos'
